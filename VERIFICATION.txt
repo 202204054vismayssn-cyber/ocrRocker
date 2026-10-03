@@ -1,0 +1,66 @@
+INVOICE OCR PDF ROUTER V3 + QWEN - VERIFICATION
+========================================
+
+Automated regression suite
+--------------------------
+27 tests passed without loading a GPU model or contacting Ollama.
+
+Coverage includes:
+- native/scanned per-page routing
+- logical multi-page invoice grouping
+- no OCR fallback for native continuation pages
+- different invoice numbers as separate group boundaries
+- Bill To / Ship To separation
+- bare "# : INV-..." invoice numbers
+- personal supplier names without Ltd/Company suffix
+- multi-rate CGST/SGST summaries
+- terminal Total vs Balance Due
+- safe ZIP batch extraction
+- minimal presentation JSON contract
+- post-merge semantic fallback integration
+- zero model calls when required fields are complete
+- text-first and scanned-image escalation behavior
+- preservation of deterministic values
+- rejection of Ship To as the customer
+- non-fatal unresolved fallback behavior
+
+Real multi-page regression: ERS25-264483.pdf
+------------------------------------------------
+Logical invoice results: 1
+Pages grouped:            [1, 2, 3]
+Page roles:               invoice_start, table_continuation, supporting_page
+Invoice number:           ERS/25-26/4483
+Vendor:                   Emerald Ray Solutions
+Bill To:                  MFINS SERVICES PRIVATE LIMITED
+Line items:               39
+Subtotal:                 121421.98
+CGST:                     0.00
+SGST:                     0.00
+IGST:                     8874.16
+Rounding:                 -0.14
+Total:                    130296.00
+Missing required fields:  []
+Validation issues:        []
+Paddle model loaded:      No
+
+Combined-invoice layout regression: invoices (13).pdf
+------------------------------------------------------
+The available local attachment became truncated after object 93, so the first
+seven complete pages were recovered non-destructively for execution testing.
+Each page is a distinct native-text invoice in the same layout.
+
+Logical invoice results: 7
+Invoice numbers:          INV-000129 through INV-000123
+Vendor:                   SACHIN SHUKLA
+Bill To:                  M-Fins Services Pvt Ltd
+Ship To merged:           No
+Line items per invoice:   2
+CGST/SGST totals:         Exact printed multi-rate sums
+IGST:                     0.00
+Missing required fields:  [] for all seven
+Validation issues:        [] for all seven
+Paddle model loaded:      No
+
+The original tested OCR implementation in invoice_extraction_colab.py is byte
+for byte unchanged; V3 adds the isolated qwen_semantic_fallback.py module after
+the shared canonical merge stage.

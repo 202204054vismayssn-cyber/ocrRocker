@@ -1,0 +1,46 @@
+{
+  "source_file": "C:\\Users\\anjali.k\\AppData\\Local\\Temp\\invoice_pdf_router_zs0z5s1c\\tmpwm6k3pft_p0001.png",
+  "fields": {
+    "customer_name": "MFINS SERVICES PVT LTD",
+    "customer_gstin": "27AAHCM3839P2ZQ",
+    "vendor_name": null,
+    "vendor_gstin": "36ABBFV0590Q1ZL",
+    "invoice_number": "VE/001/3/2026",
+    "invoice_date": null,
+    "due_date": null,
+    "place_of_supply": null,
+    "taxable_value": null,
+    "cgst_amount": null,
+    "sgst_amount": null,
+    "igst_amount": null,
+    "subtotal": null,
+    "tax": null,
+    "total_amount": null,
+    "amount_in_words": null,
+    "line_items": []
+  },
+  "field_sources": {
+    "invoice_number": "label_value",
+    "customer_name": "label_value",
+    "vendor_gstin": "gstin_reading_order",
+    "customer_gstin": "gstin_reading_order"
+  },
+  "needs_review": true,
+  "missing_required": [
+    "invoice_date",
+    "total_amount"
+  ],
+  "unparsed_or_low_confidence": [
+    "invoice_date",
+    "total_amount"
+  ],
+  "validation_issues": [],
+  "timing": {
+    "model_load_s": 0.0,
+    "inference_s": 98.76,
+    "save_output_s": 0.31,
+    "parse_and_map_s": 0.1,
+    "total_s": 99.17,
+    "shared_batch_model_load_s": 8.3
+  }
+}

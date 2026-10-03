@@ -1,0 +1,98 @@
+{
+  "source_file": "C:\\Users\\anjali.k\\AppData\\Local\\Temp\\tmpx4d4s1nk.pdf",
+  "fields": {
+    "customer_name": "M-Fins Services Pvt Ltd",
+    "customer_gstin": "27AAHCM3839P2ZQ",
+    "vendor_name": "SACHIN SHUKLA",
+    "vendor_gstin": "27IDSPS9135M1ZA",
+    "invoice_number": "INV-000109",
+    "invoice_date": "2025-11-06",
+    "due_date": null,
+    "place_of_supply": "Maharashtra (27)",
+    "taxable_value": 129100.0,
+    "cgst_amount": 3227.5,
+    "sgst_amount": 3227.5,
+    "igst_amount": 0.0,
+    "subtotal": 129100.0,
+    "tax": 6455.0,
+    "total_amount": 135555.0,
+    "amount_in_words": null,
+    "line_items": [
+      {
+        "serial_number": 1,
+        "description": "3 Kw Ongird Kit Including UTL Bificial DCR Panel, Ksolar Inverter Single Phase , BOS and Transpotation",
+        "hsn_sac": "8541",
+        "quantity": 1.0,
+        "unit_rate": 129100.0,
+        "amount": 129100.0,
+        "cgst_rate": 2.5,
+        "cgst_amount": 3227.5,
+        "sgst_rate": 2.5,
+        "sgst_amount": 3227.5
+      }
+    ],
+    "bill_to": {
+      "name": "M-Fins Services Pvt Ltd",
+      "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "gstin": "27AAHCM3839P2ZQ"
+    },
+    "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+    "balance_due": 135555.0,
+    "total_cgst_amount": 3227.5,
+    "total_sgst_amount": 3227.5,
+    "total_igst_amount": 0.0,
+    "total_tax_amount": 6455.0
+  },
+  "field_sources": {
+    "place_of_supply": "label_value",
+    "invoice_date": "text_fallback",
+    "customer_name": "native_bill_to_block",
+    "vendor_gstin": "native_supplier_block",
+    "customer_gstin": "native_bill_to_block",
+    "invoice_number": "native_header",
+    "vendor_name": "native_supplier_block",
+    "bill_to": "native_bill_to_block",
+    "customer_address": "native_bill_to_block",
+    "line_items": "merged_page_tables",
+    "subtotal": "native_terminal_summary",
+    "taxable_value": "native_terminal_summary",
+    "cgst_amount": "native_terminal_summary",
+    "sgst_amount": "native_terminal_summary",
+    "igst_amount": "native_terminal_summary",
+    "tax": "calculated_from_components",
+    "total_amount": "native_terminal_summary",
+    "balance_due": "native_terminal_summary",
+    "total_cgst_amount": "native_terminal_summary",
+    "total_sgst_amount": "native_terminal_summary",
+    "total_igst_amount": "native_terminal_summary",
+    "total_tax_amount": "calculated_from_components"
+  },
+  "needs_review": false,
+  "missing_required": [],
+  "unparsed_or_low_confidence": [],
+  "validation_issues": [],
+  "timing": {
+    "inference_s": 0.0,
+    "model_load_s": 0.0,
+    "parse_and_map_s": 0.38,
+    "save_output_s": 0.0,
+    "total_s": 0.38
+  },
+  "page_count": 100,
+  "multi_page_handling": "grouped_by_invoice",
+  "extraction_method": "native_pdf",
+  "invoice_index": 21,
+  "page_numbers": [
+    21
+  ],
+  "first_page": 21,
+  "last_page": 21,
+  "invoice_page_count": 1,
+  "document_page_count": 100,
+  "page_roles": [
+    "invoice_start"
+  ],
+  "page_extraction_methods": [
+    "native_pdf"
+  ]
+}

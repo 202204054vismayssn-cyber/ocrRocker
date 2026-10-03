@@ -1,0 +1,44 @@
+# ── Python bytecode ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ── Virtual environment ───────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Runtime output directories ────────────────────────────────────────────────
+# These are created at runtime and mounted as volumes — never part of the image.
+output/
+pdf_router_output/
+
+# ── Development / test fixtures ───────────────────────────────────────────────
+samples/
+invoice/
+tests/
+
+# ── Project planning artefacts ────────────────────────────────────────────────
+.scratch/
+SPEC.md
+VERIFICATION.txt
+QWEN_INTEGRATION.md
+README.txt
+
+# ── Editor and OS noise ───────────────────────────────────────────────────────
+.git/
+.gitignore
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── Model weights ─────────────────────────────────────────────────────────────
+# Weights live on the /models volume, not in the image.
+models/
+*.pdparams
+*.pdopt
+*.pdiparams
+*.pdmodel

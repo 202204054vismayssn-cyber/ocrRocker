@@ -1,0 +1,8 @@
+{
+  "source": "C:\\Users\\anjali.k\\AppData\\Local\\Temp\\invoice_pdf_router_2rjbjqie\\tmpnep127wk_p0001.png",
+  "pages": 1,
+  "ocr_model": {
+    "det": "PP-OCRv6_small_det",
+    "rec": "PP-OCRv6_small_rec"
+  }
+}

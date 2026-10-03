@@ -1,0 +1,262 @@
+================================================================================
+INVOICE OCR API - DEPLOYMENT INSTRUCTIONS
+================================================================================
+
+Docker Image: vismayshinde/invoice-ocr:v1.1
+Last Updated: 2026-10-03
+
+================================================================================
+PREREQUISITES
+================================================================================
+
+1. Docker must be installed on your machine
+   - Windows/Mac: Download Docker Desktop from https://www.docker.com/products/docker-desktop/
+   - Linux: Run: curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
+
+2. Ensure Docker is running
+   - Windows/Mac: Open Docker Desktop
+   - Linux: Run: sudo systemctl start docker
+
+================================================================================
+DEPLOYMENT STEPS
+================================================================================
+
+Step 1: Pull the Docker image
+------------------------------
+docker pull vismayshinde/invoice-ocr:v1.1
+
+
+Step 2: Create directories for data persistence
+------------------------------------------------
+mkdir models
+mkdir output
+
+
+Step 3: Run the container
+-------------------------
+docker run -d \
+  --name invoice-ocr \
+  -p 8000:8000 \
+  -v ./models:/models \
+  -v ./output:/output \
+  vismayshinde/invoice-ocr:v1.1
+
+
+Step 4: Verify the container is running
+----------------------------------------
+docker ps
+
+You should see the "invoice-ocr" container in the list.
+
+
+Step 5: Check container logs (optional)
+----------------------------------------
+docker logs invoice-ocr
+
+
+Step 6: Test the API
+---------------------
+Open your browser and visit:
+http://localhost:8000/docs
+
+Or test with curl:
+curl http://localhost:8000/health
+
+Expected response: {"status":"ok"}
+
+================================================================================
+USING THE API
+================================================================================
+
+Option 1: Web Upload Interface (Recommended)
+---------------------------------------------
+Open your browser and visit: http://localhost:8000/upload
+
+This provides a user-friendly interface to upload invoice files and view results.
+
+
+Option 2: Swagger UI (API Documentation)
+-----------------------------------------
+Visit: http://localhost:8000/docs
+
+Interactive API documentation where you can test endpoints directly.
+
+
+Option 3: Command Line (curl)
+------------------------------
+Upload a single invoice:
+
+curl -X POST http://localhost:8000/extract \
+  -F "files=@/path/to/your/invoice.jpg"
+
+
+Upload multiple invoices:
+
+curl -X POST http://localhost:8000/extract \
+  -F "files=@invoice1.pdf" \
+  -F "files=@invoice2.jpg"
+
+
+With Qwen semantic fallback (requires Ollama):
+
+curl -X POST http://localhost:8000/extract \
+  -F "files=@invoice.jpg" \
+  -F "enable_qwen=true"
+
+================================================================================
+API ENDPOINTS
+================================================================================
+
+GET  /              - API information
+GET  /upload        - Web upload interface
+GET  /docs          - Swagger UI documentation
+GET  /health        - Health check endpoint
+POST /extract       - Extract invoice data from uploaded files
+
+================================================================================
+SUPPORTED FILE FORMATS
+================================================================================
+
+- PDF (.pdf)
+- JPEG (.jpg, .jpeg)
+- PNG (.png)
+- TIFF (.tif, .tiff)
+- ZIP (.zip) - containing any of the above formats
+
+================================================================================
+STOPPING AND STARTING THE CONTAINER
+================================================================================
+
+Stop the container:
+-------------------
+docker stop invoice-ocr
+
+
+Start the container:
+--------------------
+docker start invoice-ocr
+
+
+Remove the container:
+---------------------
+docker stop invoice-ocr
+docker rm invoice-ocr
+
+
+View container logs:
+--------------------
+docker logs invoice-ocr
+docker logs -f invoice-ocr  (follow mode - live logs)
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Issue: Port 8000 already in use
+--------------------------------
+Solution: Use a different port
+docker run -d --name invoice-ocr -p 8080:8000 \
+  -v ./models:/models -v ./output:/output \
+  vismayshinde/invoice-ocr:v1.1
+
+Then access via: http://localhost:8080
+
+
+Issue: Container exits immediately
+-----------------------------------
+Check logs:
+docker logs invoice-ocr
+
+
+Issue: Cannot connect to API
+-----------------------------
+1. Verify container is running: docker ps
+2. Check if port 8000 is accessible: curl http://localhost:8000/health
+3. Check firewall settings
+4. Restart container: docker restart invoice-ocr
+
+
+Issue: Slow first request
+--------------------------
+First request loads PaddleOCR models (~200MB download)
+Subsequent requests will be much faster
+
+
+Issue: Out of memory
+---------------------
+Solution: Increase Docker memory allocation
+Docker Desktop > Settings > Resources > Memory (minimum 4GB recommended)
+
+================================================================================
+UPDATING TO NEWER VERSION
+================================================================================
+
+1. Pull the latest image:
+   docker pull vismayshinde/invoice-ocr:latest
+
+2. Stop and remove old container:
+   docker stop invoice-ocr
+   docker rm invoice-ocr
+
+3. Run new container:
+   docker run -d --name invoice-ocr -p 8000:8000 \
+     -v ./models:/models -v ./output:/output \
+     vismayshinde/invoice-ocr:latest
+
+Note: Models and output folders are preserved between updates
+
+================================================================================
+DOCKER COMPOSE (ALTERNATIVE METHOD)
+================================================================================
+
+Create a file named "docker-compose.yml" with this content:
+
+version: '3.8'
+
+services:
+  invoice-ocr:
+    image: vismayshinde/invoice-ocr:v1.1
+    container_name: invoice-ocr
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/models
+      - ./output:/output
+    restart: unless-stopped
+
+Then run:
+  docker compose up -d
+
+To stop:
+  docker compose down
+
+================================================================================
+ENVIRONMENT VARIABLES (OPTIONAL)
+================================================================================
+
+Customize behavior with environment variables:
+
+docker run -d --name invoice-ocr -p 8000:8000 \
+  -v ./models:/models -v ./output:/output \
+  -e OLLAMA_HOST=http://localhost:11434 \
+  -e INVOICE_QWEN_MODEL=qwen2.5vl:3b \
+  -e OLLAMA_TIMEOUT=180 \
+  vismayshinde/invoice-ocr:v1.1
+
+Available variables:
+- OLLAMA_HOST: Ollama server URL (default: http://ollama:11434)
+- INVOICE_QWEN_MODEL: Qwen model name (default: qwen2.5vl:3b)
+- OLLAMA_TIMEOUT: Request timeout in seconds (default: 180)
+- API_HOST: API bind address (default: 0.0.0.0)
+- API_PORT: API port (default: 8000)
+
+================================================================================
+SUPPORT & SOURCE
+================================================================================
+
+Docker Hub: https://hub.docker.com/r/vismayshinde/invoice-ocr
+Author: vismayshinde
+
+For issues or questions, refer to the API documentation at /docs endpoint.
+
+================================================================================

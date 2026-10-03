@@ -1,0 +1,3124 @@
+[
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "Global Pet Industries Ltd.",
+      "customer_gstin": "27AAFCG2788R1ZP",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000029",
+      "invoice_date": "2025-09-07",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 12000.0,
+      "cgst_amount": 1080.0,
+      "sgst_amount": 1080.0,
+      "igst_amount": 0.0,
+      "subtotal": 12000.0,
+      "tax": 2160.0,
+      "total_amount": 14160.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "Addition of 15 new pages to the existing Globalpet Limited website. Pages will be designed and integrated with the existing structure. Responsive design (mobile + desktop).",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 12000.0,
+          "amount": 12000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 1080.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 1080.0
+        }
+      ],
+      "bill_to": {
+        "name": "Global Pet Industries Ltd.",
+        "address": null,
+        "gstin": "27AAFCG2788R1ZP"
+      },
+      "customer_address": null,
+      "balance_due": 14160.0,
+      "total_cgst_amount": 1080.0,
+      "total_sgst_amount": 1080.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 2160.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.16,
+      "save_output_s": 0.0,
+      "total_s": 0.16
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 1,
+    "page_numbers": [
+      1
+    ],
+    "first_page": 1,
+    "last_page": 1,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000028",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.21,
+      "save_output_s": 0.0,
+      "total_s": 0.21
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 2,
+    "page_numbers": [
+      2
+    ],
+    "first_page": 2,
+    "last_page": 2,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000027",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.22,
+      "save_output_s": 0.0,
+      "total_s": 0.22
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 3,
+    "page_numbers": [
+      3
+    ],
+    "first_page": 3,
+    "last_page": 3,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000026",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.21,
+      "save_output_s": 0.0,
+      "total_s": 0.21
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 4,
+    "page_numbers": [
+      4
+    ],
+    "first_page": 4,
+    "last_page": 4,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000025",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.18,
+      "save_output_s": 0.0,
+      "total_s": 0.18
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 5,
+    "page_numbers": [
+      5
+    ],
+    "first_page": 5,
+    "last_page": 5,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000024",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.32,
+      "save_output_s": 0.0,
+      "total_s": 0.32
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 6,
+    "page_numbers": [
+      6
+    ],
+    "first_page": 6,
+    "last_page": 6,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000023",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.21,
+      "save_output_s": 0.0,
+      "total_s": 0.21
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 7,
+    "page_numbers": [
+      7
+    ],
+    "first_page": 7,
+    "last_page": 7,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000022",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.24,
+      "save_output_s": 0.0,
+      "total_s": 0.24
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 8,
+    "page_numbers": [
+      8
+    ],
+    "first_page": 8,
+    "last_page": 8,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000021",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.23,
+      "save_output_s": 0.0,
+      "total_s": 0.23
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 9,
+    "page_numbers": [
+      9
+    ],
+    "first_page": 9,
+    "last_page": 9,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000020",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.29,
+      "save_output_s": 0.0,
+      "total_s": 0.29
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 10,
+    "page_numbers": [
+      10
+    ],
+    "first_page": 10,
+    "last_page": 10,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000019",
+      "invoice_date": "2025-09-11",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 140700.0,
+      "cgst_amount": 9702.0,
+      "sgst_amount": 9702.0,
+      "igst_amount": 0.0,
+      "subtotal": 140700.0,
+      "tax": 19404.0,
+      "total_amount": 160104.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kW Single phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 98700.0,
+          "amount": 98700.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 5922.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 5922.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure, Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 42000.0,
+          "amount": 42000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 3780.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 3780.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 160104.0,
+      "total_cgst_amount": 9702.0,
+      "total_sgst_amount": 9702.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 19404.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.26,
+      "save_output_s": 0.0,
+      "total_s": 0.26
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 11,
+    "page_numbers": [
+      11
+    ],
+    "first_page": 11,
+    "last_page": 11,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000018",
+      "invoice_date": "2025-09-10",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 139000.0,
+      "cgst_amount": 8340.0,
+      "sgst_amount": 8340.0,
+      "igst_amount": 0.0,
+      "subtotal": 139000.0,
+      "tax": 16680.0,
+      "total_amount": 155680.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including Adani Bificial DCR Pnel, Inverter , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 139000.0,
+          "amount": 139000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8340.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8340.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 155680.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 8340.0,
+      "total_sgst_amount": 8340.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 16680.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.16,
+      "save_output_s": 0.0,
+      "total_s": 0.16
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 12,
+    "page_numbers": [
+      12
+    ],
+    "first_page": 12,
+    "last_page": 12,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000017",
+      "invoice_date": "2025-09-10",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 134000.0,
+      "cgst_amount": 8040.0,
+      "sgst_amount": 8040.0,
+      "igst_amount": 0.0,
+      "subtotal": 134000.0,
+      "tax": 16080.0,
+      "total_amount": 150080.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including Adani Bificial DCR Pnel, Inverter , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 134000.0,
+          "amount": 134000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8040.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8040.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 150080.0,
+      "total_cgst_amount": 8040.0,
+      "total_sgst_amount": 8040.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 16080.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.17,
+      "save_output_s": 0.0,
+      "total_s": 0.17
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 13,
+    "page_numbers": [
+      13
+    ],
+    "first_page": 13,
+    "last_page": 13,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000016",
+      "invoice_date": "2025-09-06",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 156000.0,
+      "cgst_amount": 10764.0,
+      "sgst_amount": 10764.0,
+      "igst_amount": 0.0,
+      "subtotal": 156000.0,
+      "tax": 21528.0,
+      "total_amount": 177528.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System , Adani Panel, Polycab or Ksolare inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 109200.0,
+          "amount": 109200.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6552.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6552.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 46800.0,
+          "amount": 46800.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4212.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4212.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 177528.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 10764.0,
+      "total_sgst_amount": 10764.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 21528.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.36,
+      "save_output_s": 0.0,
+      "total_s": 0.36
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 14,
+    "page_numbers": [
+      14
+    ],
+    "first_page": 14,
+    "last_page": 14,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000015",
+      "invoice_date": "2025-09-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 122000.0,
+      "cgst_amount": 7320.0,
+      "sgst_amount": 7320.0,
+      "igst_amount": 0.0,
+      "subtotal": 122000.0,
+      "tax": 14640.0,
+      "total_amount": 136640.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including 500 - 550 Wp SOLAR PV MODULE NON-DCR (ADM/Eastman/INA /Equivalent), Inverter Single Phase , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 122000.0,
+          "amount": 122000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 7320.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 7320.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 136640.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 7320.0,
+      "total_sgst_amount": 7320.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 14640.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.18,
+      "save_output_s": 0.0,
+      "total_s": 0.18
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 15,
+    "page_numbers": [
+      15
+    ],
+    "first_page": 15,
+    "last_page": 15,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000014",
+      "invoice_date": "2025-09-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 142000.0,
+      "cgst_amount": 8520.0,
+      "sgst_amount": 8520.0,
+      "igst_amount": 0.0,
+      "subtotal": 142000.0,
+      "tax": 17040.0,
+      "total_amount": 159040.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including 500 - 550 Wp SOLAR PV MODULE DCR (ADM/Eastman/INA /Equivalent), Inverter Single Phase , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 142000.0,
+          "amount": 142000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8520.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8520.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 159040.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 8520.0,
+      "total_sgst_amount": 8520.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 17040.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.19,
+      "save_output_s": 0.0,
+      "total_s": 0.19
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 16,
+    "page_numbers": [
+      16
+    ],
+    "first_page": 16,
+    "last_page": 16,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000013",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 134000.0,
+      "cgst_amount": 8040.0,
+      "sgst_amount": 8040.0,
+      "igst_amount": 0.0,
+      "subtotal": 134000.0,
+      "tax": 16080.0,
+      "total_amount": 150080.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including Adani Bificial DCR Pnel, Inverter , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 134000.0,
+          "amount": 134000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8040.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8040.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 150080.0,
+      "total_cgst_amount": 8040.0,
+      "total_sgst_amount": 8040.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 16080.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_name": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.21,
+      "save_output_s": 0.0,
+      "total_s": 0.21
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 17,
+    "page_numbers": [
+      17
+    ],
+    "first_page": 17,
+    "last_page": 17,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000012",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 134000.0,
+      "cgst_amount": 8040.0,
+      "sgst_amount": 8040.0,
+      "igst_amount": 0.0,
+      "subtotal": 134000.0,
+      "tax": 16080.0,
+      "total_amount": 150080.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3 Kw Ongird Kit Including Adani Bificial DCR Pnel, Inverter , BOS and Transpotation",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 134000.0,
+          "amount": 134000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8040.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8040.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 150080.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 8040.0,
+      "total_sgst_amount": 8040.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 16080.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.2,
+      "save_output_s": 0.0,
+      "total_s": 0.2
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 18,
+    "page_numbers": [
+      18
+    ],
+    "first_page": 18,
+    "last_page": 18,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000011",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 196000.0,
+      "cgst_amount": 13188.0,
+      "sgst_amount": 13188.0,
+      "igst_amount": 0.0,
+      "subtotal": 196000.0,
+      "tax": 26376.0,
+      "total_amount": 222376.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "4kw Ongrid Solar System , 550 Watt Panel 8 panel , Polycab or Ksolare inverter 5 kW Single Phase",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 148400.0,
+          "amount": 148400.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 8904.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 8904.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 47600.0,
+          "amount": 47600.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4284.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4284.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 222376.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 13188.0,
+      "total_sgst_amount": 13188.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 26376.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.25,
+      "save_output_s": 0.0,
+      "total_s": 0.25
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 19,
+    "page_numbers": [
+      19
+    ],
+    "first_page": 19,
+    "last_page": 19,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000010",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 160000.0,
+      "cgst_amount": 11040.0,
+      "sgst_amount": 11040.0,
+      "igst_amount": 0.0,
+      "subtotal": 160000.0,
+      "tax": 22080.0,
+      "total_amount": 182080.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System , Adani Topcon Panel, Polycab or Ksolare inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 112000.0,
+          "amount": 112000.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6720.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6720.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 48000.0,
+          "amount": 48000.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4320.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4320.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 182080.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 11040.0,
+      "total_sgst_amount": 11040.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 22080.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.29,
+      "save_output_s": 0.0,
+      "total_s": 0.29
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 20,
+    "page_numbers": [
+      20
+    ],
+    "first_page": 20,
+    "last_page": 20,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000009",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 156000.0,
+      "cgst_amount": 10764.0,
+      "sgst_amount": 10764.0,
+      "igst_amount": 0.0,
+      "subtotal": 156000.0,
+      "tax": 21528.0,
+      "total_amount": 177528.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System , Adani Panel, Polycab or Ksolare inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 109200.0,
+          "amount": 109200.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6552.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6552.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 46800.0,
+          "amount": 46800.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4212.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4212.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "payment_made": 177528.0,
+      "balance_due": 0.0,
+      "total_cgst_amount": 10764.0,
+      "total_sgst_amount": 10764.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 21528.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "payment_made": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.22,
+      "save_output_s": 0.0,
+      "total_s": 0.22
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 21,
+    "page_numbers": [
+      21
+    ],
+    "first_page": 21,
+    "last_page": 21,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000008",
+      "invoice_date": "2025-09-02",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 153000.0,
+      "cgst_amount": 10584.0,
+      "sgst_amount": 10584.0,
+      "igst_amount": 0.0,
+      "subtotal": 153000.0,
+      "tax": 21168.0,
+      "total_amount": 174168.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System , Adani Panel, Polycab or Ksolare inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 106200.0,
+          "amount": 106200.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6372.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6372.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos, Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 46800.0,
+          "amount": 46800.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4212.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4212.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "No.8 , SOW Nagar 4th ST. Choolaimedu Chennai-94 Tamil Nadu, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 174168.0,
+      "total_cgst_amount": 10584.0,
+      "total_sgst_amount": 10584.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 21168.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.36,
+      "save_output_s": 0.0,
+      "total_s": 0.36
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 22,
+    "page_numbers": [
+      22
+    ],
+    "first_page": 22,
+    "last_page": 22,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000007",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 165300.0,
+      "cgst_amount": 11405.7,
+      "sgst_amount": 11405.7,
+      "igst_amount": 0.0,
+      "subtotal": 165300.0,
+      "tax": 22811.4,
+      "total_amount": 188111.4,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "03 kW On-grid Solar System Waaree & Polycab Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 115710.0,
+          "amount": 115710.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6942.6,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6942.6
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 49590.0,
+          "amount": 49590.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4463.1,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4463.1
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 188111.4,
+      "total_cgst_amount": 11405.7,
+      "total_sgst_amount": 11405.7,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 22811.4
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.23,
+      "save_output_s": 0.0,
+      "total_s": 0.23
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 23,
+    "page_numbers": [
+      23
+    ],
+    "first_page": 23,
+    "last_page": 23,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000006",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 156600.0,
+      "cgst_amount": 10805.4,
+      "sgst_amount": 10805.4,
+      "igst_amount": 0.0,
+      "subtotal": 156600.0,
+      "tax": 21610.8,
+      "total_amount": 178210.8,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani panel & Polycab Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 109620.0,
+          "amount": 109620.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6577.2,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6577.2
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 46980.0,
+          "amount": 46980.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4228.2,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4228.2
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 178210.8,
+      "total_cgst_amount": 10805.4,
+      "total_sgst_amount": 10805.4,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 21610.8
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.27,
+      "save_output_s": 0.0,
+      "total_s": 0.27
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 24,
+    "page_numbers": [
+      24
+    ],
+    "first_page": 24,
+    "last_page": 24,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000005",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 156000.0,
+      "cgst_amount": 10764.0,
+      "sgst_amount": 10764.0,
+      "igst_amount": 0.0,
+      "subtotal": 156000.0,
+      "tax": 21528.0,
+      "total_amount": 177528.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani 565 Topcon & Ksolare Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 109200.0,
+          "amount": 109200.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6552.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6552.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 46800.0,
+          "amount": 46800.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4212.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4212.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 177528.0,
+      "total_cgst_amount": 10764.0,
+      "total_sgst_amount": 10764.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 21528.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.25,
+      "save_output_s": 0.0,
+      "total_s": 0.25
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 25,
+    "page_numbers": [
+      25
+    ],
+    "first_page": 25,
+    "last_page": 25,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000004",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 227000.0,
+      "cgst_amount": 15663.0,
+      "sgst_amount": 15663.0,
+      "igst_amount": 0.0,
+      "subtotal": 227000.0,
+      "tax": 31326.0,
+      "total_amount": 258326.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "5kw Ongrid Solar System Waaree panel & Waaree Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 158900.0,
+          "amount": 158900.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 9534.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 9534.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Bos , Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 68100.0,
+          "amount": 68100.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 6129.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 6129.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 258326.0,
+      "total_cgst_amount": 15663.0,
+      "total_sgst_amount": 15663.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 31326.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.27,
+      "save_output_s": 0.0,
+      "total_s": 0.27
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 26,
+    "page_numbers": [
+      26
+    ],
+    "first_page": 26,
+    "last_page": 26,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000003",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 227000.0,
+      "cgst_amount": 15663.0,
+      "sgst_amount": 15663.0,
+      "igst_amount": 0.0,
+      "subtotal": 227000.0,
+      "tax": 31326.0,
+      "total_amount": 258326.0,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "5kw Ongrid Solar System Waaree panel & Waaree Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 158900.0,
+          "amount": 158900.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 9534.0,
+          "sgst_rate": 6.0,
+          "sgst_amount": 9534.0
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Bos , Transportation & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 68100.0,
+          "amount": 68100.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 6129.0,
+          "sgst_rate": 9.0,
+          "sgst_amount": 6129.0
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 258326.0,
+      "total_cgst_amount": 15663.0,
+      "total_sgst_amount": 15663.0,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 31326.0
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.26,
+      "save_output_s": 0.0,
+      "total_s": 0.26
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 27,
+    "page_numbers": [
+      27
+    ],
+    "first_page": 27,
+    "last_page": 27,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000002",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 145800.0,
+      "cgst_amount": 10090.2,
+      "sgst_amount": 10090.2,
+      "igst_amount": 0.0,
+      "subtotal": 145800.0,
+      "tax": 20180.4,
+      "total_amount": 165980.4,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 101060.0,
+          "amount": 101060.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6063.6,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6063.6
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 44740.0,
+          "amount": 44740.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4026.6,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4026.6
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 165980.4,
+      "total_cgst_amount": 10090.2,
+      "total_sgst_amount": 10090.2,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 20180.4
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.27,
+      "save_output_s": 0.0,
+      "total_s": 0.27
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 28,
+    "page_numbers": [
+      28
+    ],
+    "first_page": 28,
+    "last_page": 28,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  },
+  {
+    "source_file": "C:\\Users\\anjali.k\\Downloads\\Old invoice\\invoices (14).pdf",
+    "fields": {
+      "customer_name": "M-Fins Services Pvt Ltd",
+      "customer_gstin": "27AAHCM3839P2ZQ",
+      "vendor_name": "SACHIN SHUKLA",
+      "vendor_gstin": "27IDSPS9135M1ZA",
+      "invoice_number": "INV-000001",
+      "invoice_date": "2025-08-05",
+      "due_date": null,
+      "place_of_supply": "Maharashtra (27)",
+      "taxable_value": 145800.0,
+      "cgst_amount": 10090.2,
+      "sgst_amount": 10090.2,
+      "igst_amount": 0.0,
+      "subtotal": 145800.0,
+      "tax": 20180.4,
+      "total_amount": 165980.4,
+      "amount_in_words": null,
+      "line_items": [
+        {
+          "serial_number": 1,
+          "description": "3kw Ongrid Solar System Adani Panel & Polycab Inverter 3 kw",
+          "hsn_sac": "8541",
+          "quantity": 1.0,
+          "unit_rate": 101060.0,
+          "amount": 101060.0,
+          "cgst_rate": 6.0,
+          "cgst_amount": 6063.6,
+          "sgst_rate": 6.0,
+          "sgst_amount": 6063.6
+        },
+        {
+          "serial_number": 2,
+          "description": "Solar Structure Bos & Installation",
+          "hsn_sac": "995461",
+          "quantity": 1.0,
+          "unit_rate": 44740.0,
+          "amount": 44740.0,
+          "cgst_rate": 9.0,
+          "cgst_amount": 4026.6,
+          "sgst_rate": 9.0,
+          "sgst_amount": 4026.6
+        }
+      ],
+      "bill_to": {
+        "name": "M-Fins Services Pvt Ltd",
+        "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+        "gstin": "27AAHCM3839P2ZQ"
+      },
+      "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Malad, West, Mumbai, 400064 Maharashtra, India",
+      "balance_due": 165980.4,
+      "total_cgst_amount": 10090.2,
+      "total_sgst_amount": 10090.2,
+      "total_igst_amount": 0.0,
+      "total_tax_amount": 20180.4
+    },
+    "field_sources": {
+      "place_of_supply": "label_value",
+      "invoice_date": "text_fallback",
+      "customer_name": "native_bill_to_block",
+      "vendor_gstin": "native_supplier_block",
+      "customer_gstin": "native_bill_to_block",
+      "invoice_number": "native_header",
+      "vendor_name": "native_supplier_block",
+      "bill_to": "native_bill_to_block",
+      "customer_address": "native_bill_to_block",
+      "line_items": "merged_page_tables",
+      "subtotal": "native_terminal_summary",
+      "taxable_value": "native_terminal_summary",
+      "cgst_amount": "native_terminal_summary",
+      "sgst_amount": "native_terminal_summary",
+      "igst_amount": "native_terminal_summary",
+      "tax": "calculated_from_components",
+      "total_amount": "native_terminal_summary",
+      "balance_due": "native_terminal_summary",
+      "total_cgst_amount": "native_terminal_summary",
+      "total_sgst_amount": "native_terminal_summary",
+      "total_igst_amount": "native_terminal_summary",
+      "total_tax_amount": "calculated_from_components"
+    },
+    "needs_review": false,
+    "missing_required": [],
+    "unparsed_or_low_confidence": [],
+    "validation_issues": [],
+    "timing": {
+      "inference_s": 0.0,
+      "model_load_s": 0.0,
+      "parse_and_map_s": 0.43,
+      "save_output_s": 0.0,
+      "total_s": 0.43
+    },
+    "page_count": 29,
+    "multi_page_handling": "grouped_by_invoice",
+    "extraction_method": "native_pdf",
+    "invoice_index": 29,
+    "page_numbers": [
+      29
+    ],
+    "first_page": 29,
+    "last_page": 29,
+    "invoice_page_count": 1,
+    "document_page_count": 29,
+    "page_roles": [
+      "invoice_start"
+    ],
+    "page_extraction_methods": [
+      "native_pdf"
+    ]
+  }
+]

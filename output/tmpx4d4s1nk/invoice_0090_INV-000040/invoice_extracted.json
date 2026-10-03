@@ -1,0 +1,110 @@
+{
+  "source_file": "C:\\Users\\anjali.k\\AppData\\Local\\Temp\\tmpx4d4s1nk.pdf",
+  "fields": {
+    "customer_name": "M-Fins Services Pvt Ltd",
+    "customer_gstin": "27AAHCM3839P2ZQ",
+    "vendor_name": "SACHIN SHUKLA",
+    "vendor_gstin": "27IDSPS9135M1ZA",
+    "invoice_number": "INV-000040",
+    "invoice_date": "2025-09-09",
+    "due_date": null,
+    "place_of_supply": "Maharashtra (27)",
+    "taxable_value": 104400.0,
+    "cgst_amount": 7203.6,
+    "sgst_amount": 7203.6,
+    "igst_amount": 0.0,
+    "subtotal": 104400.0,
+    "tax": 14407.2,
+    "total_amount": 118807.2,
+    "amount_in_words": null,
+    "line_items": [
+      {
+        "serial_number": 1,
+        "description": "2kw Ongrid Solar System , APS Bificial Panel 550 Watt , Polycab or Ksolare inverter 3 kW single Phase",
+        "hsn_sac": "8541",
+        "quantity": 1.0,
+        "unit_rate": 73080.0,
+        "amount": 73080.0,
+        "cgst_rate": 6.0,
+        "cgst_amount": 4384.8,
+        "sgst_rate": 6.0,
+        "sgst_amount": 4384.8
+      },
+      {
+        "serial_number": 2,
+        "description": "Solar Structure Bos, Transportation & Installation",
+        "hsn_sac": "995461",
+        "quantity": 1.0,
+        "unit_rate": 31320.0,
+        "amount": 31320.0,
+        "cgst_rate": 9.0,
+        "cgst_amount": 2818.8,
+        "sgst_rate": 9.0,
+        "sgst_amount": 2818.8
+      }
+    ],
+    "bill_to": {
+      "name": "M-Fins Services Pvt Ltd",
+      "address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+      "gstin": "27AAHCM3839P2ZQ"
+    },
+    "customer_address": "T-14, 3rd Floor, Sej Plaza, Marve Rd, near Nutan School, Malad, Mumbai, 400064 Maharashtra, India",
+    "balance_due": 118807.2,
+    "total_cgst_amount": 7203.6,
+    "total_sgst_amount": 7203.6,
+    "total_igst_amount": 0.0,
+    "total_tax_amount": 14407.2
+  },
+  "field_sources": {
+    "place_of_supply": "label_value",
+    "invoice_date": "text_fallback",
+    "customer_name": "native_bill_to_block",
+    "vendor_gstin": "native_supplier_block",
+    "customer_gstin": "native_bill_to_block",
+    "invoice_number": "native_header",
+    "vendor_name": "native_supplier_block",
+    "bill_to": "native_bill_to_block",
+    "customer_address": "native_bill_to_block",
+    "line_items": "merged_page_tables",
+    "subtotal": "native_terminal_summary",
+    "taxable_value": "native_terminal_summary",
+    "cgst_amount": "native_terminal_summary",
+    "sgst_amount": "native_terminal_summary",
+    "igst_amount": "native_terminal_summary",
+    "tax": "calculated_from_components",
+    "total_amount": "native_terminal_summary",
+    "balance_due": "native_terminal_summary",
+    "total_cgst_amount": "native_terminal_summary",
+    "total_sgst_amount": "native_terminal_summary",
+    "total_igst_amount": "native_terminal_summary",
+    "total_tax_amount": "calculated_from_components"
+  },
+  "needs_review": false,
+  "missing_required": [],
+  "unparsed_or_low_confidence": [],
+  "validation_issues": [],
+  "timing": {
+    "inference_s": 0.0,
+    "model_load_s": 0.0,
+    "parse_and_map_s": 0.41,
+    "save_output_s": 0.0,
+    "total_s": 0.41
+  },
+  "page_count": 100,
+  "multi_page_handling": "grouped_by_invoice",
+  "extraction_method": "native_pdf",
+  "invoice_index": 90,
+  "page_numbers": [
+    90
+  ],
+  "first_page": 90,
+  "last_page": 90,
+  "invoice_page_count": 1,
+  "document_page_count": 100,
+  "page_roles": [
+    "invoice_start"
+  ],
+  "page_extraction_methods": [
+    "native_pdf"
+  ]
+}
