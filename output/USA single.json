@@ -1,0 +1,54 @@
+file name = invoice6.pdf
+
+{
+    "status": "ok",
+    "model": "gemma2:2b",
+    "provider": "ollama",
+    "device": "gpu"
+}
+
+{
+    "success": true,
+    "request_id": "a42e4888-985f-42cc-8424-23b8fb50ca68",
+    "character_stored": "--- PAGE 1 ---\n630213888\n302650\nORIGINAL INVOICE | Page 1 of 2\nSIKORSKY\nSIKORSKY COMMERCIAL INC* | Invoice Number: 8633892\n124 QUARRY ROAD | Invoice Date: 19. August 2026\nTRUMBULL CT 06611\nUSA\nCustomer No. | Sales Order | Sales Order Date Customer Contract or P/O No.\n301448 | 22795084 | 18. August 2026 BAL/SBZ/2026/025\nRemit To: SIKORSKY COMMERCIAL INC | Ultimate | BAJAJ AUTO LTD.\nLOCKHEED MARTIN CORPORATION | End User: | MUMBALPUNE ROAD\nEFT/ACH/WIRE CITIBANK ABA 021000089 | PUNE 411035\nCITIBANK ACCT 31079882 SWIFT CITIUS33 | INDIA\nCHECKS JP MORGAN CHASE PO BOX 26149\nCHICAGO, IL 60673-6149 US\nShip To: BAJAJ AUTO LTD | Payment will BAJAJ AUTO LTD.\nMUMBAI - PUNE ROAD | Be made by: MUMBAI PUNE ROAD\nAKURDI. PUNE 411035 | PUNE 411035\nIndia | INDIA\nTerms: Net 30 days | Airway Bill Number:\nShipped from: NORTH HAVEN,CT on: 08/18/2026 Via: CAU CUST Bill of Lading: 2479390 FCA:SELLER'S PLANT\nItem No. Stock/Part No. | Description Condition | Quantity Unit UnitPrice(USD) | NetAmount(USD)\n1 | MS29561-121 | PACKING | 10.00 EA | 2.52 | 25.20\nCountry of Origin: US\nExport License: NLR\nECCN: 9A991.d\nCustoms Info: 4016935010\nRef Packing Slip: 87714737\nShipment ID: 2479390\n2 | 2315M-24-12 | BLADE | 3.00 EA 512.12 | 1.536.36\nASSY\nCountry of Origin: US\nECCN: 9A991.d\nCustoms Info: 4016996050\nRef Packing Slip: 87714738\nShipment ID: 2479390\n3 | MS3367-6-0 | STRAP,TI | 100.00 EA | 2.99 | 299.00\nEDOWN\nCountry of Origin: US\nECCN: EAR99\nCustoms Info: 3926909989\nRef Packing Slip: 87714739\nShipment ID: 2479390\nSUBTOTAL: | 1.860.56\nSikorsky Commereial, Ine is a registered trade name of Helicopter Support, Ine (also referred to as \"HSi) m the Connectcut towns of Shelton North Haven Straord\nand Trumbull. and a registered fictitious name of Helicopter Support. Inc. in the State of Maryland and the Commonwealth of Pennsylvania\n--- PAGE 2 ---\nSIKORSKY | ORIGINAL INVOICE | Page 2 of 2\nSIKORSKY COMMERCIAL INC*\n124 QUARRY ROAD | Invoice Number: 8633892\nTRUMBULL CT 06611 | Invoice Date: 19. August 2026\nUSA\ntem No. Stock/Part No. | Description Condition | Quantity Unit UnitPrice(USD) | NetAmount(USD)\nTAXES: | 0.00\nNET TOTAL: | 1.860.56\nTOTAL AMOUNT DUE: | 1.860.56\nState of Maryland and the Commonwealth of Pennsylvania",
+    "data": {
+        "invoice_no": "8633892",
+        "invoice_date": "19. August 2026",
+        "po_no": null,
+        "net_amount": 1.86056,
+        "sales_tax_rate": null,
+        "total_sales_tax": null,
+        "shipping_handling_freight": null,
+        "grand_total": 1.86056,
+        "payable_amount": 1.86056,
+        "items": [],
+        "vendor_name": "SIKORSKY COMMERCIAL INC",
+        "vendor_ein": null,
+        "state_tax_permit_license": null,
+        "vendor_address": "124 QUARRY ROAD TRUMBULL CT 06611 USA",
+        "customer_name": "BAJAJ AUTO LTD",
+        "customer_tax_id_ein": null,
+        "resale_exemption_certificate_no": null,
+        "customer_billing_address": null,
+        "bank_name": "CITIBANK",
+        "routing_number": "021000089",
+        "account_number": null,
+        "swift_bic": "CITIUS33",
+        "bank_address_location": null,
+        "remark": null
+    },
+    "token_usage": {
+        "input_tokens": 1414,
+        "output_tokens": 316,
+        "thoughts_tokens": null,
+        "total_tokens": 1730,
+        "execution_time_ms": 4903
+    },
+    "metadata": {
+        "total_pages": 2,
+        "character_count": 2215,
+        "finish_reason": "stop",
+        "model_name": "gemma2:2b",
+        "model_provider": "ollama"
+    }
+}

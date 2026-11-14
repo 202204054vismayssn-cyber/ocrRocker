@@ -1,0 +1,2 @@
+"""India invoice domain models."""
+

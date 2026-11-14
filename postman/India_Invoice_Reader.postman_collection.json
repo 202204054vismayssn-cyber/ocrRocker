@@ -1,0 +1,331 @@
+{
+  "info": {
+    "_postman_id": "7ecc1cb5-9801-4db0-beb3-8dd6ccd29ac1",
+    "name": "India Invoice Reader (GPU PaddleOCR + Ollama Gemma)",
+    "description": "Extract India GST tax invoices, HSN summaries, and PAN derivation.\n\nUses local GPU-accelerated PaddleOCR for text extraction and local Ollama Gemma for structured JSON.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8000",
+      "type": "string",
+      "description": "Base URL (or Cloudflare tunnel URL)"
+    },
+    {
+      "key": "apiKey",
+      "value": "kBLaCcQmnuk7yTALLOtcC3iM77Xt5q8H",
+      "type": "string",
+      "description": "API key for SAVVY_API_KEY header"
+    },
+    {
+      "key": "characterStored",
+      "value": "",
+      "type": "string",
+      "description": "Auto-populated by Batch Prepare for use in Batch Submit"
+    },
+    {
+      "key": "batchJobName",
+      "value": "",
+      "type": "string",
+      "description": "Auto-populated by Batch Submit for use in Status and Result"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Check if API and local Ollama model are running."
+      }
+    },
+    {
+      "name": "2. Extract Single Invoice",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "SAVVY_API_KEY",
+            "value": "{{apiKey}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "description": "Select invoice PDF, JPG, JPEG, or PNG"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/india/invoices/extract",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "india",
+            "invoices",
+            "extract"
+          ]
+        },
+        "description": "Upload an invoice to extract structured JSON data on GPU."
+      }
+    },
+    {
+      "name": "3. Complete Invoice (With Correlation ID)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "SAVVY_API_KEY",
+            "value": "{{apiKey}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "description": "Select invoice PDF, JPG, JPEG, or PNG"
+            },
+            {
+              "key": "invoice_id",
+              "value": "ROW_INV_1001",
+              "type": "text",
+              "description": "Caller row/invoice correlation identifier"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/india/invoices/complete",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "india",
+            "invoices",
+            "complete"
+          ]
+        },
+        "description": "Extract invoice and return matching caller invoice_id."
+      }
+    },
+    {
+      "name": "Batch Processing",
+      "description": "4-step asynchronous batch processing workflow running on local GPU.",
+      "item": [
+        {
+          "name": "Step 1: Batch Prepare (OCR Only)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.character_stored) {",
+                  "    var safeText = JSON.stringify(jsonData.character_stored).slice(1, -1);",
+                  "    pm.collectionVariables.set(\"characterStored\", safeText);",
+                  "    pm.environment.set(\"characterStored\", safeText);",
+                  "    console.log(\"Auto-saved JSON-safe characterStored for Step 2 Submit!\");",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "SAVVY_API_KEY",
+                "value": "{{apiKey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "description": "Select invoice to extract and compact OCR text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/india/invoices/batch/prepare",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "india",
+                "invoices",
+                "batch",
+                "prepare"
+              ]
+            },
+            "description": "Runs local PaddleOCR on GPU and returns character_stored. Auto-saves to {{characterStored}} variable in both collection and environment."
+          }
+        },
+        {
+          "name": "Step 2: Batch Submit (Queue GPU Job)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.batch_job_name) {",
+                  "    pm.collectionVariables.set(\"batchJobName\", jsonData.batch_job_name);",
+                  "    pm.environment.set(\"batchJobName\", jsonData.batch_job_name);",
+                  "    console.log(\"Auto-saved batchJobName: \" + jsonData.batch_job_name);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "SAVVY_API_KEY",
+                "value": "{{apiKey}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"items\": [\n    {\n      \"custom_id\": \"inv_001\",\n      \"character_stored\": \"{{characterStored}}\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/india/invoices/batch/submit",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "india",
+                "invoices",
+                "batch",
+                "submit"
+              ]
+            },
+            "description": "Submits prepared invoice texts. Immediately returns batch_job_name and queues GPU extraction in background."
+          }
+        },
+        {
+          "name": "Step 3: Batch Status (Poll Progress)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "SAVVY_API_KEY",
+                "value": "{{apiKey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/india/invoices/batch/status/{{batchJobName}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "india",
+                "invoices",
+                "batch",
+                "status",
+                "{{batchJobName}}"
+              ]
+            },
+            "description": "Poll execution state (QUEUED, PROCESSING, COMPLETED) and progress counts."
+          }
+        },
+        {
+          "name": "Step 4: Batch Result (Fetch Final JSON)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "SAVVY_API_KEY",
+                "value": "{{apiKey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/india/invoices/batch/result/{{batchJobName}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "india",
+                "invoices",
+                "batch",
+                "result",
+                "{{batchJobName}}"
+              ]
+            },
+            "description": "Retrieve the final structured JSON results for all invoices in the batch."
+          }
+        }
+      ]
+    },
+    {
+      "name": "System Processing Status",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "SAVVY_API_KEY",
+            "value": "{{apiKey}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/system/processing-status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "system",
+            "processing-status"
+          ]
+        },
+        "description": "View live GPU concurrency slot utilization and active extraction count."
+      }
+    }
+  ]
+}

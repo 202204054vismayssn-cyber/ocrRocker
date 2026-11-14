@@ -1,0 +1,105 @@
+file name = 9017530126000001_BAJAJ_GI_(1-25)_JAN_2
+
+{
+    "status": "ok",
+    "model": "gemma2:2b",
+    "provider": "ollama",
+    "device": "gpu"
+}
+
+{
+    "success": true,
+    "request_id": "48aa1cd9-88e5-4138-9238-87534163cce0",
+    "character_stored": "--- PAGE 1 ---\nInvoice No :\n9017530126000001\nState :\n17 - MEGHALAY\nBranch Code : 90170I\nDate :\n31-01-2026\nORIGINAL FOR RECIPIENT\nUnion Bank of India\nINS. MEGHALAYA , UNION BANK BHAVAN, 12 TH\nFLOOR, 239 VIDHAN BHAVAN MARG 400021\nMEGHALAY\nGSTIN : 17AAACU0564G1ZI\nEmail :\nPhone :\nTAX INVOICE\nDetails of Recipient\nName:\nBAJAJ GENERAL INSURANCE LIMITED\nAddress:\n3rd Floor,, Keating Road, Police Bazar, Meghalaya, 793001\nState:\nMEGHALAY\nPOS:\n17-MEGHALAY\nGSTIN:\n17AABCB5730G1ZY\nSl No\nSupply Description\nUOM\nHSN/SAC Quantity\nUnit Price\nAmount\n1\nINCOME A/C COMMISSION FROM BAJAJ ALLIANZ\nLTD.\n997161\n0.000\n0.000000\n21212.00\nReverse Charge : NO\nTaxable:\n21212.00\nCGST :\n1909.07\nSGST/UTGST :\n1909.07\nGrand Total:\n25030.14\nAmount In Words : twenty five thousand thirty rupees and fourteen paisa Only\nFor Union Bank of India\nE.&O.E.\nNarration: 01.01.2026-25.01.2026 GI\nAuthorised Signatory\nDISCLAIMER: This is a computer generated invoice and does not require signature\nDeclaration:\nI/We hereby declare that though our aggregate turnover in any preceding financial year from 2017- 18 onwards is more than the aggregate turnover notified\nunder sub-rule (4) of rule 48, we are not required to prepare an invoice in terms of the provisions of the said sub-rule.\nRate\nSGST/UTGST\nCGST\nIGST\nCGST @9.00 % : SGST @9.00 %\n1909.07\n1909.07\n0.00",
+    "total_pages": 1,
+    "character_count": 1319
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_113725_5b126b24",
+    "total_items": 1,
+    "state": "PROCESSING"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_113725_5b126b24",
+    "state": "COMPLETED",
+    "total_items": 1,
+    "completed_items": 1,
+    "failed_items": 0,
+    "created_at": "2026-10-21T11:37:25.023593+00:00",
+    "updated_at": "2026-10-21T11:37:32.496603+00:00"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_113725_5b126b24",
+    "state": "COMPLETED",
+    "total_items": 1,
+    "completed_items": 1,
+    "failed_items": 0,
+    "results": [
+        {
+            "custom_id": "inv_001",
+            "success": true,
+            "data": {
+                "customer_name": null,
+                "customer_address": null,
+                "customer_gst": null,
+                "vendor_name": "Union Bank of India",
+                "vendor_address": "INS. MEGHALAYA, UNION BANK BHAVAN, 12 TH FLOOR, 239 VIDHAN BHAVAN MARG 400021 MEGHALAY",
+                "vendor_gst": "17AAACU0564G1ZI",
+                "vendor_pan": "AAACU0564G",
+                "invoice_number": null,
+                "invoice_date": null,
+                "taxable_amount": 21212,
+                "igst_amount": 0,
+                "cgst_amount": 1909.07,
+                "sgst_amount": 1909.07,
+                "invoice_amount": 25030.14,
+                "hsn_sac_code": null,
+                "discount": 0,
+                "state_cess": 0,
+                "other_charges": 0,
+                "irn_number": 0,
+                "customer_pan": null,
+                "bank_name": null,
+                "bank_branch": null,
+                "bank_account_number": null,
+                "ifsc_code": null,
+                "due_date": null,
+                "items": [
+                    {
+                        "sr_no": "1",
+                        "description": "INCOME A/C COMMISSION FROM BAJAJ ALLIANZ LTD.",
+                        "quantity": null,
+                        "unit": "null",
+                        "rate": null,
+                        "amount": 21212,
+                        "hsn_sac": "997161"
+                    }
+                ],
+                "hsn_summary": [
+                    {
+                        "hsn": "997161",
+                        "tax_rate": 9,
+                        "taxable_amount": 21212,
+                        "cgst": 1909.07,
+                        "sgst": 1909.07,
+                        "igst": 0
+                    }
+                ]
+            },
+            "error": null,
+            "token_usage": {
+                "input_tokens": 1297,
+                "output_tokens": 308,
+                "total_tokens": 1605,
+                "execution_time_ms": 7433,
+                "model": "gemma2:2b"
+            }
+        }
+    ]
+}

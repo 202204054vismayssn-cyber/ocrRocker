@@ -1,0 +1,1 @@
+"""Country-neutral document models."""

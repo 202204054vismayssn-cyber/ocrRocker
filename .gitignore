@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+.model_cache/
+.pytest_cache/
+.uv-cache/
+htmlcov/
+.coverage
+queued_invoices/*
+!queued_invoices/.gitkeep
+
+# Rotating operational logs (keep the host directory only)
+logs/*
+!logs/.gitkeep

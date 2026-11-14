@@ -1,0 +1,76 @@
+file name = invoice 7.pdf
+
+{
+    "success": true,
+    "request_id": "56cfabcb-7347-42f4-bf31-65252a70d679",
+    "character_stored": "--- PAGE 1 ---\n301482\nWORLD FUEL SERVICES, INC. | INVOICE\n9800 N.W. 41st STREET SUITE 400 | CUSTOMER NO. | INVOICE NO | INVOICE DATE | PAGE NO.\nMIAMI, FL. 33178 | 106951 | 27819100-21101 | 31-MAY-2026 | 1 - 1\nTel: (305) 428-8000 Email: snegi@wfscorp.com\nInternet: www.wfscorp.com\nREMIT TO:\nWORLD FUEL SERVICES\n2458 PAYSPHERE CIRCLE\nCHICAGO, IL 60674-0024\nBAJAJ AUTO LIMITED | OR WIRE TO:\nCOMPLEX, MUMBAI | Bank of America N.A. NEW YORK, NY\nPUNE 411035 PUNE ROAD, AKURDI | SWIFT: BOFAUS3N\nINDIA | FedWire ABA: 026009593\nACH ABA: USABA\nACCT: World Fuel Services Europe Ltd\nACCT# 5800678525\nDATE UPLIFTED | FUEL TICKET | AIRCRAFT TYPE | FLIGHT NO. | PO NO/CONTRACT NO. | TERMS\n20-MAY-2026 | 001800 | Bombardier 700 | VT-SRJ | N/A | 30 D FROM INV\nTAIL NO. | LOCATION | TERRITORY | DESTINATION | DUE DATE | CONTACT\nANY A/C/VT-SRJ | IAD / KIAD | VIRGINIA | VIE / LOWW | 30-JUN-2026 | Singapore Sales\nDESCRIPTION | QUANTITY | UNIT PRICE | EXTENDED AMOUNT | TAX AMOUNT | INVOICE AMOUNT\nJET FUEL | USD | USD | USD\nINTOPLANE FEE | 3.911.00 USG 3,911.00 USG | 3.84975 USD/USG 4.80000 USD/USG | 15,056.37 | 0.00 | 15,056.37\nAIRPORT/FLOWAGE FEE | 3.911.00 USG | 1.80020 USD/USG | 18,772.80 | 0.00 | 18,772.80 7,040.58\nPIPELINE FEE | 3,911.00 USG | 0.05240 USD/USG | 7.040.58 204.94 | 0.00 0.00 | 204.94\nU.S. FEDERAL SUPERFUND EXCISE TAX M AND O FEE | 3,911.00 USG | 0.05000 USD/USG | 195.55 | 0.00 | 195.55\nSTATE FUEL TAX | 3,911.00 USG 3,911.00 USG | 0.00429 USD/USG 0.05000 USD/USG | 16.78 | 0.00 | 16.78\nU.S. FEDERAL EXCISE TAX (FET) | 3,911.00 USG | 0.24400 USD/USG | 195.55 954.28 | 0.00 0.00 | 954.28 195.55\nCOMMENTS | 42.436.85 | 0.00 | 42,436.85\nFBO Ticket #:\nAlliance Card No.: **6956\nFBO Name: SIGNATURE FLIGHT SUPPORT\nTu\nMAIL INSTRUCTIONS\nELECTRONIC | SALES ORDER NO. | PLEASE REMIT THIS AMOUNT\n55717306 | USD 42,436.85",
+    "total_pages": 1,
+    "character_count": 1817
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_120723_5dff886f",
+    "total_items": 1,
+    "state": "PROCESSING"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_120723_5dff886f",
+    "state": "COMPLETED",
+    "total_items": 1,
+    "completed_items": 1,
+    "failed_items": 0,
+    "created_at": "2026-10-21T12:07:23.885830+00:00",
+    "updated_at": "2026-10-21T12:07:28.739721+00:00"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_120723_5dff886f",
+    "state": "COMPLETED",
+    "total_items": 1,
+    "completed_items": 1,
+    "failed_items": 0,
+    "results": [
+        {
+            "custom_id": "inv_001",
+            "success": true,
+            "data": {
+                "invoice_no": "301482",
+                "invoice_date": "31-MAY-2026",
+                "po_no": null,
+                "net_amount": null,
+                "sales_tax_rate": null,
+                "total_sales_tax": null,
+                "shipping_handling_freight": null,
+                "grand_total": 42436.85,
+                "payable_amount": 42436.85,
+                "items": [],
+                "vendor_name": "WORLD FUEL SERVICES, INC.",
+                "vendor_ein": null,
+                "state_tax_permit_license": null,
+                "vendor_address": "9800 N.W. 41st STREET SUITE 400 MIAMI, FL. 33178",
+                "customer_name": null,
+                "customer_tax_id_ein": null,
+                "resale_exemption_certificate_no": null,
+                "customer_billing_address": null,
+                "bank_name": null,
+                "routing_number": null,
+                "account_number": null,
+                "swift_bic": null,
+                "bank_address_location": null,
+                "remark": null
+            },
+            "error": null,
+            "token_usage": {
+                "input_tokens": 1395,
+                "output_tokens": 299,
+                "total_tokens": 1694,
+                "execution_time_ms": 4817,
+                "model": "gemma2:2b"
+            }
+        }
+    ]
+}

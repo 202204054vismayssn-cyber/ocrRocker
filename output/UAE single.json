@@ -1,0 +1,66 @@
+
+file_name = AVRIO MOBILITY PTE. LTD. 1.pdf
+
+{
+    "status": "ok",
+    "model": "gemma2:2b",
+    "provider": "ollama",
+    "device": "gpu"
+}
+
+{
+    "success": true,
+    "request_id": "77752854-ca71-41c7-9d2a-d97513fbbc9e",
+    "character_stored": "--- PAGE 1 ---\nINVOICE\nAVRIO MOBILITY PTE. LTD.\n160 ROBINSON ROAD\n#14-04\nSINGAPORE, 068914\nSingapore\nWWW.AVRIOMOBILITY.COM\nBILL TO\nDove Soft Technologies Private Limited\n1101, DLH Park,S.V Road,\nOpp. MTNL, Goregaon West\nMumbai, Maharashtra 400062\nIndia\nInvoice Number:\nAMPL/25-26/602\nInvoice Date:\nNovember 1, 2025\nPayment Due:\nNovember 1, 2025\nAmount Due (EUR):\n€73,806.52\nItems\nQuantity\nPrice\nAmount\nBULK SMS\n1\n€73,806.52\n€73,806.52\nTotal:\n€73,806.52\nAmount Due (EUR):\n€73,806.52\nNotes / Terms\nAccount Name: AVRIO MOBILITY PTE LTD\nIBAN: NL61CITI7000287776\nBank Address: Citibank International plc, Schiphol Boulevard 257, 1118 BH Schiphol Bank Name: Citibank\nBank Country: Netherlands\nBIC: CITINL2X",
+    "data": {
+        "vendor_name": "AVRIO MOBILITY PTE. LTD.",
+        "vendor_address": "160 ROBINSON ROAD #14-04 SINGAPORE, 068914 Singapore",
+        "vendor_trn_no": null,
+        "invoice_no": "AMPL/25-26/602",
+        "invoice_date": "2025-11-01",
+        "po_no": null,
+        "buyer_name": "Dove Soft Technologies Private Limited",
+        "buyer_address": "1101, DLH Park,S.V Road, Opp. MTNL, Goregaon West Mumbai, Maharashtra 400062 India",
+        "buyer_trn_no": null,
+        "vat_rate": null,
+        "net_amount": 73806.52,
+        "total_tax": 0,
+        "grand_total": 73806.52,
+        "items": [
+            {
+                "item": "BULK SMS",
+                "qty": 1,
+                "unit_price": 73806.52,
+                "vat_rate": null,
+                "net_amount": 73806.52,
+                "line_total": 73806.52
+            }
+        ],
+        "bank_name": "Citibank",
+        "account_number": null,
+        "iban": "NL61CITI7000287776",
+        "swift_bic": "CITINL2X",
+        "bank_branch": null,
+        "currency": "AED"
+    },
+    "token_usage": {
+        "input_tokens": 751,
+        "output_tokens": 387,
+        "thoughts_tokens": null,
+        "total_tokens": 1138,
+        "execution_time_ms": 7836
+    },
+    "validation": {
+        "is_valid": false,
+        "warnings": [
+            "vendor_trn_no is missing"
+        ]
+    },
+    "metadata": {
+        "total_pages": 1,
+        "character_count": 700,
+        "finish_reason": "stop",
+        "model_name": "gemma2:2b",
+        "model_provider": "ollama"
+    }
+}

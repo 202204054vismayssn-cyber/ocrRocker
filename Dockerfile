@@ -1,100 +1,36 @@
-# syntax=docker/dockerfile:1
-# ──────────────────────────────────────────────────────────────────────────────
-# Invoice OCR API — CPU-only image
-#
-# Build:
-#   docker build -t invoice-ocr .
-#
-# Run:
-#   docker run -p 8000:8000 \
-#     -v ./models:/models \
-#     -v ./output:/output \
-#     invoice-ocr
-#
-# The /models volume is where PaddleOCR caches model weights.  On the first
-# run against an empty volume the weights are downloaded automatically (~200 MB).
-# Subsequent runs reuse the cache — no re-download needed.
-# ──────────────────────────────────────────────────────────────────────────────
+FROM python:3.13-slim
 
-FROM python:3.11-slim
-
-# ── System dependencies ───────────────────────────────────────────────────────
-# libgomp1    — OpenMP, required by PaddlePaddle CPU kernels
-# libglib2.0-0 — required by OpenCV (imported transitively by PaddleOCR)
-# libgl1      — required by OpenCV for image I/O
-# libpoppler-cpp-dev — required by pdf2image (optional but avoids noisy warnings)
-# We install then clean in a single RUN layer to keep the layer count low.
-
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        libgomp1 \
-        libglib2.0-0 \
-        libgl1 \
-    && rm -rf /var/lib/apt/lists/*
-
-# ── Python dependencies ───────────────────────────────────────────────────────
-# Install before copying application code so Docker layer caching works:
-# a code change does not invalidate the (slow) pip install layer.
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PATH="/app/.venv/bin:$PATH" \
+    PADDLE_PDX_CACHE_HOME="/app/.model_cache/paddle"
 
 WORKDIR /app
 
-COPY requirements.txt .
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        libgl1 libglib2.0-0 libgomp1 tesseract-ocr tesseract-ocr-eng \
+    && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir uv==0.12.5
 
-# paddlepaddle CPU wheel — must match the version expected by paddleocr>=2.9.
-# PP-OCRv6 models (used by invoice_extraction_colab.py) require PaddlePaddle 3.x.
-# The official CPU-only index provides a slim wheel without CUDA dependencies.
-RUN pip install --no-cache-dir paddlepaddle==3.2.1 -i https://www.paddlepaddle.org.cn/packages/stable/cpu/ \
- && pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml uv.lock README.md ./
+COPY src ./src
+RUN uv sync --no-dev
 
-# ── Application code ──────────────────────────────────────────────────────────
-# Copy only the source files needed at runtime.  Everything else is excluded
-# by .dockerignore.
+COPY main.py ./
 
-COPY invoice_extraction_colab.py .
-COPY native_invoice_parser.py .
-COPY qwen_semantic_fallback.py .
-COPY pdf_router.py .
-COPY presentation_ocr.py .
-COPY api.py .
-COPY router/router/ router/
-COPY test_upload.html .
+# Keep the API unprivileged. The named Paddle cache volume inherits this
+# directory ownership when Docker creates it.
+RUN groupadd --gid 10001 appgroup \
+    && useradd --uid 10001 --gid appgroup --home-dir /app --shell /usr/sbin/nologin appuser \
+    && mkdir -p /app/.model_cache/paddle \
+    && chown -R appuser:appgroup /app/.model_cache
 
-# ── Runtime environment ───────────────────────────────────────────────────────
-
-# PaddleOCR model cache — mount a volume here to persist across container runs.
-ENV PADDLE_HOME=/models
-
-# Where the router writes per-invoice JSON/XML output files.
-# Callers mount a volume here to retrieve results.
-ENV OUTPUT_DIR=/output
-
-# Qwen/Ollama sidecar — only consulted when enable_qwen=true in the request.
-ENV OLLAMA_HOST=http://ollama:11434
-ENV INVOICE_QWEN_MODEL=qwen2.5vl:3b
-
-# FastAPI server bind settings — override at runtime with -e if needed.
-ENV API_HOST=0.0.0.0
-ENV API_PORT=8000
-
-# Create the volume mount points so Docker knows they are intended mount points.
-RUN mkdir -p /models /output
-
-# ── Health check ──────────────────────────────────────────────────────────────
-# Docker / docker-compose / orchestrators use this to determine readiness.
-# The first health check is delayed 30 s to allow PaddleOCR model loading
-# on cold start.
-
-HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD python -c \
-        "import urllib.request, sys; \
-         r = urllib.request.urlopen('http://localhost:' + __import__('os').environ.get('API_PORT','8000') + '/health', timeout=8); \
-         sys.exit(0 if r.status == 200 else 1)"
-
-# ── Entry point ───────────────────────────────────────────────────────────────
+USER appuser
 
 EXPOSE 8000
 
-CMD uvicorn api:app \
-      --host "${API_HOST}" \
-      --port "${API_PORT}" \
-      --workers 1 \
-      --timeout-keep-alive 75
+HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)" || exit 1
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]

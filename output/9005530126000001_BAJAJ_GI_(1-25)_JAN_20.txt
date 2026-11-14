@@ -1,0 +1,77 @@
+{
+    "status": "ok",
+    "model": "gemma2:2b",
+    "provider": "ollama",
+    "device": "gpu"
+}
+
+
+{
+  "success": true,
+  "request_id": "ba60b4cc-9f9a-4e65-a3c5-aebd5f61a05e",
+  "character_stored": "--- PAGE 1 ---\nInvoice No :\n9005530126000001\nState :\n05 - UTTARANCHAL\nBranch Code : 90050I\nDate :\n31-01-2026\nORIGINAL FOR RECIPIENT\nUnion Bank of India\nINS. UTTARAKHAND , HOME SELECT BUILDING,\nNEAR SURYA HOTEL, KUTCHERY CHOWK, RAN JHK\n834001\nUTTARANCHAL\nGSTIN : 05AAACU0564G2ZM\nEmail :\nPhone : 8552944815\nTAX INVOICE\nDetails of Recipient\nName:\nBAJAJ GENERAL INSURANCE LIMITED\nAddress:\nShop no 209-210 Chanakya tower, Rajpur Road Dehradun-248001\nState:\nUTTARANCHAL\nPOS:\n05-UTTARANCHAL\nGSTIN:\n05AABCB5730G1Z3\nSl No\nSupply Description\nUOM\nHSN/SAC Quantity\nUnit Price\nAmount\n1\nINCOME A/C COMMISSION FROM BAJAJ ALLIANZ\nLTD.\n997161\n0.000\n0.000000\n255625.00\nReverse Charge : NO\nTaxable:\n255625.00\nCGST :\n23006.14\nSGST/UTGST :\n23006.14\nGrand Total:\n301637.28\nAmount In Words : three lakh one thousand six hundred thirty seven rupees and twenty eight paisa Only\nFor Union Bank of India\nE.&O.E.\nNarration: 01.01.2026-25.01.2026 GI\nAuthorised Signatory\nDISCLAIMER: This is a computer generated invoice and does not require signature\nDeclaration:\nI/We hereby declare that though our aggregate turnover in any preceding financial year from 2017- 18 onwards is more than the aggregate turnover notified\nunder sub-rule (4) of rule 48, we are not required to prepare an invoice in terms of the provisions of the said sub-rule.\nRate\nSGST/UTGST\nCGST\nIGST\nCGST @9.00 % : SGST @9.00 %\n23006.14\n23006.14\n0.00",
+  "data": {
+    "customer_name": null,
+    "customer_address": null,
+    "customer_gst": null,
+    "vendor_name": "Union Bank of India",
+    "vendor_address": "INS. UTTARAKHAND, HOME SELECT BUILDING, NEAR SURYA HOTEL, KUTCHERY CHOWK, RAN JHK 834001 UTTARANCHAL",
+    "vendor_gst": "GSTIN : 05AAACU0564G2ZM",
+    "vendor_pan": null,
+    "invoice_number": null,
+    "invoice_date": null,
+    "taxable_amount": 255625,
+    "igst_amount": 0,
+    "cgst_amount": 23006.14,
+    "sgst_amount": 23006.14,
+    "invoice_amount": 301637.28,
+    "hsn_sac_code": null,
+    "discount": 0,
+    "state_cess": 0,
+    "other_charges": 0,
+    "irn_number": 0,
+    "customer_pan": null,
+    "bank_name": null,
+    "bank_branch": null,
+    "bank_account_number": null,
+    "ifsc_code": null,
+    "due_date": null,
+    "items": [
+      {
+        "sr_no": "1",
+        "description": "INCOME A/C COMMISSION FROM BAJAJ ALLIANZ LTD.",
+        "quantity": null,
+        "unit": "null",
+        "rate": null,
+        "amount": 255625,
+        "hsn_sac": "997161"
+      }
+    ],
+    "hsn_summary": [
+      {
+        "hsn": "997161",
+        "tax_rate": 9,
+        "taxable_amount": 255625,
+        "cgst": 23006.14,
+        "sgst": 23006.14,
+        "igst": 0
+      }
+    ]
+  },
+  "token_usage": {
+    "input_tokens": 1329,
+    "output_tokens": 317,
+    "thoughts_tokens": null,
+    "total_tokens": 1646,
+    "execution_time_ms": 31712
+  },
+  "metadata": {
+    "total_pages": 1,
+    "character_count": 1387,
+    "finish_reason": "stop",
+    "model_name": "gemma2:2b",
+    "model_provider": "ollama"
+  }
+}
+
+9005530126000001_BAJAJ_GI_(1-25)_JAN_20 ---> pdf name

@@ -1,62 +1,52 @@
-# ──────────────────────────────────────────────────────────────────────────
-# Invoice OCR API — Docker Compose
-#
-# Default (CPU-only, no Ollama):
-#   docker compose up -d
-#   docker compose logs -f invoice-ocr
-#
-# With the Qwen/Ollama fallback enabled:
-#   docker compose --profile ollama up -d
-#
-# Model weights live in ./models on the host, mounted to /models in the
-# container.  On the first run PaddleOCR downloads its model weights
-# automatically (~200 MB).  Subsequent runs reuse the cached weights.
-#
-# Ollama models are cached in ./ollama-models on the host, so the
-# first pull is not repeated on every restart.
-# ──────────────────────────────────────────────────────────────────────────
-
 services:
-  invoice-ocr:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    environment:
-      # Ollama is reachable at the service name when both are on the
-      # default network.  The Ollama profile also overrides this env var.
-      OLLAMA_HOST: http://ollama:11434
+  model_cache_init:
+    image: alpine:3.22
+    command: ["sh", "-c", "chown -R 10001:10001 /model-cache"]
     volumes:
-      - ./models:/models
-      - ./output:/output
-    restart: unless-stopped
+      - paddle-model-cache:/model-cache
+    restart: "no"
 
-  # Optional Qwen sidecar.  Enabled with: docker compose --profile ollama up -d
-  #
-  # Runs on CPU by default so the profile works on any machine.  A GPU is a
-  # large speedup for the vision tier, but is NOT required — enable it by
-  # uncommenting the deploy block below *only* on a host with the NVIDIA
-  # container toolkit installed.  Leaving it commented keeps the CPU-only
-  # deployment in the spec working out of the box.
-  ollama:
-    image: ollama/ollama:latest
+  api:
+    user: root
+    build: .
     ports:
-      - "11434:11434"
+      # PHP/host calls port 4207; Uvicorn stays on port 8000 inside Docker.
+      - "4207:8000"
+    env_file:
+      - .env
+    environment:
+      AUTO_RELOAD: "${AUTO_RELOAD:-false}"
+      RELOAD_DELAY_SECONDS: "${RELOAD_DELAY_SECONDS:-5}"
+    depends_on:
+      model_cache_init:
+        condition: service_completed_successfully
     volumes:
-      - ./ollama-models:/root/.ollama/models
-    profiles:
-      - "ollama"
+      # Host code changes appear immediately inside the development container.
+      - ./src:/app/src:ro
+      - ./main.py:/app/main.py:ro
+      - paddle-model-cache:/app/.model_cache/paddle
+    command:
+      - /bin/sh
+      - -c
+      - |
+        if [ "$$AUTO_RELOAD" = "true" ]; then
+          exec uvicorn main:app --host 0.0.0.0 --port 8000 --reload --reload-delay "$$RELOAD_DELAY_SECONDS" --reload-dir /app
+        fi
+        exec uvicorn main:app --host 0.0.0.0 --port 8000 --workers 1
+    cpus: "${API_CPU_LIMIT:-4.0}"
+    mem_limit: "${API_MEMORY_LIMIT:-12g}"
+    stop_grace_period: 30s
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5)"
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 30s
     restart: unless-stopped
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: all
-    #           capabilities: [gpu]
 
 volumes:
-  # Placeholder so `docker compose config` is valid; the Ollama model cache is
-  # bound to ./ollama-models on the host (see the ollama service above).
-  ollama-placeholder:
+  paddle-model-cache:

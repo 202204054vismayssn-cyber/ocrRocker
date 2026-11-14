@@ -1,0 +1,240 @@
+file name=2512-124.pdf
+
+{
+    "status": "ok",
+    "model": "gemma2:2b",
+    "provider": "ollama",
+    "device": "gpu"
+}
+
+{
+    "success": true,
+    "request_id": "827d96cd-9bcf-44d3-b380-e7392c55819b",
+    "character_stored": "--- PAGE 1 ---\n31-12-2025\n2512-124\nDOVE SOFT GLOBAL - FZCO\nDSO-IFZA , IFZA Properties, Dubai Silicon\n6009 Dubai, Dubai\nUAE\nTRN : 105061611700003\n31-01-2026\nTotal Amount(Incl. VAT)\nSubtotal(Vat Excl.)\nVAT (5.0%)\nProduct Description\nGrand Total\nVAT (%)\nQty/Hrs\nVAT (AED)\nRate\nTotal\nMonthly Recurring Charge (MRC) -DEC 2025\nFASTRK\nEYEPLS\nFLYAIX\nIHCLHT\nIRTH\nIRTHIN\nMIAJEW\nMYQMIN\nSKINNP\nSONATA\nTANSHQ\nTitan(IRTH)\nTITANW\nTNEIRA\nZOYA\nZOYABT\nMYTNEU\nNEUPAS\nTATANU\nGURSUT\n3,087.00\n5%\n20\n147.00\n147.00\n2,940.00T\nAED 3,087.00\nAED 2,940.00\nAED 147.00",
+    "total_pages": 1,
+    "character_count": 537
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_115622_00c1fac7",
+    "total_items": 1,
+    "state": "PROCESSING"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_115622_00c1fac7",
+    "state": "PROCESSING",
+    "total_items": 1,
+    "completed_items": 0,
+    "failed_items": 0,
+    "created_at": "2026-10-21T11:56:22.324956+00:00",
+    "updated_at": "2026-10-21T11:56:22.324956+00:00"
+}
+
+{
+    "success": true,
+    "batch_job_name": "batches/loc_20261021_115622_00c1fac7",
+    "state": "COMPLETED",
+    "total_items": 1,
+    "completed_items": 1,
+    "failed_items": 0,
+    "results": [
+        {
+            "custom_id": "inv_001",
+            "success": true,
+            "data": {
+                "vendor_name": "DOVE SOFT GLOBAL - FZCO",
+                "vendor_address": "DSO-IFZA , IFZA Properties, Dubai Silicon\n6009 Dubai, Dubai\nUAE",
+                "vendor_trn_no": "105061611700003",
+                "invoice_no": null,
+                "invoice_date": "2025-12-31",
+                "po_no": null,
+                "buyer_name": null,
+                "buyer_address": null,
+                "buyer_trn_no": null,
+                "vat_rate": 5,
+                "net_amount": 2940,
+                "total_tax": 147,
+                "grand_total": 3087,
+                "items": [
+                    {
+                        "item": "FASTRK",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "EYEPLS",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "FLYAIX",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "IHCLHT",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "IRTH",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "IRTHIN",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "MIAJEW",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "MYQMIN",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "SKINNP",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "SONATA",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "TANSHQ",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "Titan(IRTH)",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "TITANW",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "TNEIRA",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "ZOYA",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "ZOYABT",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "MYTNEU",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "NEUPAS",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "TATANU",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    },
+                    {
+                        "item": "GURSUT",
+                        "qty": 20,
+                        "unit_price": 147,
+                        "vat_rate": 5,
+                        "net_amount": 147,
+                        "line_total": 147
+                    }
+                ],
+                "bank_name": null,
+                "account_number": null,
+                "iban": null,
+                "swift_bic": null,
+                "bank_branch": null,
+                "currency": "AED"
+            },
+            "error": null,
+            "token_usage": {
+                "input_tokens": 739,
+                "output_tokens": 1788,
+                "total_tokens": 2527,
+                "execution_time_ms": 24026,
+                "model": "gemma2:2b"
+            }
+        }
+    ]
+}
